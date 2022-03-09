@@ -4,7 +4,7 @@
 
 <groupId>com.javacodegeeks.example</groupId>
 	<artifactId>mymeveo</artifactId>
-	<version>0.0.5-SNAPSHOT</version>
+	<version>0.0.5</version>
 	<packaging>jar</packaging>
 
 	<name>large scale app</name>
@@ -21,7 +21,7 @@
     <connection>scm:git:${project.scm.url}</connection>
     <developerConnection>scm:git:${project.scm.url}</developerConnection>
     <url>https://github.com/masumcse1/mymeveo.git</url>
-    <tag>0.0.1</tag>
+    <tag>mymeveo-0.0.5</tag>
   </scm>
 
 
