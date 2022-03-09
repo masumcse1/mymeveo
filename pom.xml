@@ -33,13 +33,7 @@
   </properties>
   
   
-  	<distributionManagement>
-  		<site>
-  			<id>internal.repo</id>
-  			<name>Temporary Staging Repository</name>
-  			<url>file://${project.groupId}</url>
-  		</site>
-	</distributionManagement>
+ 
   
   <dependencies>
   		<dependency>
