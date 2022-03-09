@@ -33,7 +33,19 @@
   </properties>
   
   
- 
+ <repositories>
+ 		<repository>
+ 			<id>jboss-repo</id>
+ 			<url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
+ 		</repository>
+ 	</repositories>
+ 	<distributionManagement>
+ 		<site>
+ 			<id>internal.repo</id>
+ 			<name>Temporary Staging Repository</name>
+ 			<url>file://${project.groupId}</url>
+ 		</site>
+	</distributionManagement>
   
   <dependencies>
   		<dependency>
