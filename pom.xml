@@ -33,19 +33,16 @@
   </properties>
   
   
- <repositories>
- 		<repository>
- 			<id>jboss-repo</id>
- 			<url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
- 		</repository>
- 	</repositories>
- 	<distributionManagement>
- 		<site>
- 			<id>internal.repo</id>
- 			<name>Temporary Staging Repository</name>
- 			<url>file://${project.groupId}</url>
- 		</site>
-	</distributionManagement>
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub GulamSamdani Apache Maven Packages</name>
+               <url>https://maven.pkg.github.com/masumcse1/mymeveo</url>
+        </repository>
+    </distributionManagement>
+    
+ 	
+ 	
   
   <dependencies>
   		<dependency>
