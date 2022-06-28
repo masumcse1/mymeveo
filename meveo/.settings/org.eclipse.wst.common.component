@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+        
+    <wb-module deploy-name="meveo-1.0.1-SNAPSHOT">
+                
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/ear-resources"/>
+                
+        <wb-resource deploy-path="/" source-path="/src/main/application" tag="defaultRootSource"/>
+        <dependent-module archiveName="meveo-api-dto-1.0.1-SNAPSHOT.jar" deploy-path="/lib" handle="module:/resource/meveo-api-dto/meveo-api-dto">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="resteasy-jaxrs-3.9.1.Final.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/jboss/resteasy/resteasy-jaxrs/3.9.1.Final/resteasy-jaxrs-3.9.1.Final.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jboss-jaxrs-api_2.1_spec-2.0.0.Final.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/jboss/spec/javax/ws/rs/jboss-jaxrs-api_2.1_spec/2.0.0.Final/jboss-jaxrs-api_2.1_spec-2.0.0.Final.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jboss-jaxb-api_2.3_spec-2.0.0.Final.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/jboss/spec/javax/xml/bind/jboss-jaxb-api_2.3_spec/2.0.0.Final/jboss-jaxb-api_2.3_spec-2.0.0.Final.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="reactive-streams-1.0.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jboss-annotations-api_1.3_spec-2.0.1.Final.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/jboss/spec/javax/annotation/jboss-annotations-api_1.3_spec/2.0.1.Final/jboss-annotations-api_1.3_spec-2.0.1.Final.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="httpclient-4.5.4.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/apache/httpcomponents/httpclient/4.5.4/httpclient-4.5.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="httpcore-4.4.5.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/apache/httpcomponents/httpcore/4.4.5/httpcore-4.4.5.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jcip-annotations-1.0-1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jboss-logging-3.4.1.Final.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/jboss/logging/jboss-logging/3.4.1.Final/jboss-logging-3.4.1.Final.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="swagger-annotations-1.5.23.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/io/swagger/swagger-annotations/1.5.23/swagger-annotations-1.5.23.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="meveo-model-1.0.1-SNAPSHOT.jar" deploy-path="/lib" handle="module:/resource/meveo-model/meveo-model">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jakarta.persistence-api-2.2.3.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-lang3-3.10.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/apache/commons/commons-lang3/3.10/commons-lang3-3.10.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="joda-time-2.10.6.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/joda-time/joda-time/2.10.6/joda-time-2.10.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="xstream-1.4.15.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/com/thoughtworks/xstream/xstream/1.4.15/xstream-1.4.15.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="xmlpull-1.1.3.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="xpp3_min-1.1.4c.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="guava-25.0-jre.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="reflections-0.9.12.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/reflections/reflections/0.9.12/reflections-0.9.12.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jackson-datatype-hibernate5-2.9.10.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/com/fasterxml/jackson/datatype/jackson-datatype-hibernate5/2.9.10/jackson-datatype-hibernate5-2.9.10.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jta-1.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/javax/transaction/jta/1.1/jta-1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jakarta.xml.bind-api-2.3.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/jakarta/xml/bind/jakarta.xml.bind-api/2.3.2/jakarta.xml.bind-api-2.3.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jakarta.activation-api-1.2.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/jakarta/activation/jakarta.activation-api/1.2.1/jakarta.activation-api-1.2.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jaxb-runtime-2.3.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="txw2-2.3.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="istack-commons-runtime-3.0.7.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="stax-ex-1.7.8.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/jvnet/staxex/stax-ex/1.7.8/stax-ex-1.7.8.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="FastInfoset-1.2.13.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/com/sun/xml/fastinfoset/FastInfoset/1.2.13/FastInfoset-1.2.13.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="meveo-el-resolver-1.0.1-SNAPSHOT.jar" deploy-path="/lib" handle="module:/resource/meveo-el-resolver/meveo-el-resolver">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jboss-el-api_3.0_spec-2.0.0.Final.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/jboss/spec/javax/el/jboss-el-api_3.0_spec/2.0.0.Final/jboss-el-api_3.0_spec-2.0.0.Final.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="slf4j-api-1.7.22.jbossorg-1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/slf4j/slf4j-api/1.7.22.jbossorg-1/slf4j-api-1.7.22.jbossorg-1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="el-ri-1.0.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/com/sun/el/el-ri/1.0/el-ri-1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="meveo-common-1.0.1-SNAPSHOT.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/meveo/meveo-common/1.0.1-SNAPSHOT/meveo-common-1.0.1-SNAPSHOT.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+            
+    </wb-module>
+    
+</project-modules>
