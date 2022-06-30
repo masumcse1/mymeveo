@@ -114,12 +114,7 @@
 				<artifactId>meveo-el-resolver</artifactId>
 				<version>${project.version}</version>
 			</dependency>
-			<dependency>
-				<groupId>org.meveo</groupId>
-				<artifactId>meveo-common</artifactId>
-				<version>${project.version}</version>
-			</dependency>
-		
+			
 			<dependency>
 				<groupId>org.unix4j</groupId>
 				<artifactId>unix4j-command</artifactId>
