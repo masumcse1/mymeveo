@@ -1,15 +1,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>org.meveo</groupId>
-    <artifactId>mymeveo</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
-  </parent>
-  <artifactId>meveo-web</artifactId>
-  <packaging>war</packaging>
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.meveo</groupId>
+		<artifactId>mymeveo</artifactId>
+		<version>1.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>meveo-web</artifactId>
+	<packaging>war</packaging>
 
-  
-  <build>
+
+
+	<build>
 		<finalName>meveo</finalName>
 		<resources>
 			<resource>
@@ -109,7 +110,7 @@
 					</replacements>
 				</configuration>
 			</plugin>
-			
+
 			<!-- <plugin>
 				<artifactId>maven-antrun-plugin</artifactId>
 				<executions>
@@ -135,7 +136,7 @@
 				</executions>
 			</plugin>
 			-->
-			
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-resources-plugin</artifactId>
@@ -175,9 +176,8 @@
 			<groupId>org.meveo</groupId>
 			<artifactId>meveo-security</artifactId>
 		</dependency>
-		
-		
-		
+
+
 		<!-- Libraries included in JBoss -->
 		<dependency>
 			<groupId>jakarta.validation</groupId>
