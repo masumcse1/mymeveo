@@ -49,6 +49,15 @@
 			<type>ejb</type>
 		</dependency>
 
+
+		<dependency>
+			<groupId>org.meveo</groupId>
+			<artifactId>meveo-api</artifactId>
+			<version>${project.version}</version>
+			<type>ejb</type>
+		</dependency>
+
+
 		<dependency>
 			<groupId>org.meveo</groupId>
 			<artifactId>meveo-web</artifactId>
