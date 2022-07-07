@@ -59,17 +59,36 @@
 	</distributionManagement>
 
 
+	<!--
+	 <dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>javax</groupId>
+				<artifactId>javaee-api</artifactId>
+				<version>${javaee-api-version}</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>javax</groupId>
+				<artifactId>javaee-web-api</artifactId>
+				<version>${javaee-api-version}</version>
+				<scope>provided</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 	
+	-->
 
 	<dependencyManagement>
 		<dependencies>
-		<dependency>
+			<dependency>
 				<groupId>org.meveo</groupId>
 				<artifactId>meveo-api</artifactId>
 				<version>${project.version}</version>
 			</dependency>
-		
-		<dependency>
+
+			<dependency>
 				<groupId>org.meveo</groupId>
 				<artifactId>meveo-api-dto</artifactId>
 				<version>${project.version}</version>
@@ -79,7 +98,7 @@
 				<artifactId>meveo-admin</artifactId>
 				<version>${project.version}</version>
 			</dependency>
-			
+
 			<dependency>
 				<groupId>org.meveo</groupId>
 				<artifactId>meveo-model</artifactId>
@@ -90,13 +109,26 @@
 				<artifactId>meveo-security</artifactId>
 				<version>${project.version}</version>
 			</dependency>
+
+
 			<dependency>
 				<groupId>org.meveo</groupId>
 				<artifactId>meveo-el-resolver</artifactId>
 				<version>${project.version}</version>
 			</dependency>
-		
-		
+
+			<dependency>
+				<groupId>commons-io</groupId>
+				<artifactId>commons-io</artifactId>
+				<version>2.11.0</version>
+			</dependency>
+
+			<dependency>
+				<groupId>javax.jws</groupId>
+				<artifactId>javax.jws-api</artifactId>
+				<version>1.1</version>
+			</dependency>
+
 			<dependency>
 				<groupId>org.unix4j</groupId>
 				<artifactId>unix4j-command</artifactId>
@@ -134,7 +166,7 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
-			
+
 			<dependency>
 				<groupId>org.apache.commons</groupId>
 				<artifactId>commons-lang3</artifactId>
@@ -429,21 +461,8 @@
 	</dependencyManagement>
 
 
-	<!-- 
-	<build>
-		<pluginManagement>
-			<plugins>
-
-				<plugin>
-					<artifactId>maven-compiler-plugin</artifactId>
-					<version>3.8.1</version>
-				</plugin>
-
-			</plugins>
-		</pluginManagement>
-	</build>
-	-->
 	
+
 	<build>
 		<pluginManagement>
 			<plugins>
@@ -569,6 +588,8 @@
 			</extension>
 		</extensions>
 	</build>
+	
+	
 	<reporting>
 		<plugins>
 			<plugin>
@@ -587,6 +608,10 @@
 			</plugin>
 		</plugins>
 	</reporting>
+	
+	
+	
+	
 	<profiles>
 		<profile>
 			<id>github</id>
