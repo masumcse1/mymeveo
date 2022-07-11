@@ -42,6 +42,8 @@
 		<module>meveo-admin</module>
 		<module>meveo</module>
 		<module>meveo-web</module>
+		<module>meveo-ejb</module>
+
 	</modules>
 
 	<repositories>
@@ -82,13 +84,13 @@
 
 	<dependencyManagement>
 		<dependencies>
-		<dependency>
+			<dependency>
 				<groupId>org.meveo</groupId>
 				<artifactId>meveo-api</artifactId>
 				<version>${project.version}</version>
 			</dependency>
-		
-		<dependency>
+
+			<dependency>
 				<groupId>org.meveo</groupId>
 				<artifactId>meveo-api-dto</artifactId>
 				<version>${project.version}</version>
@@ -98,7 +100,7 @@
 				<artifactId>meveo-admin</artifactId>
 				<version>${project.version}</version>
 			</dependency>
-			
+
 			<dependency>
 				<groupId>org.meveo</groupId>
 				<artifactId>meveo-model</artifactId>
@@ -109,12 +111,32 @@
 				<artifactId>meveo-security</artifactId>
 				<version>${project.version}</version>
 			</dependency>
+
+
 			<dependency>
 				<groupId>org.meveo</groupId>
 				<artifactId>meveo-el-resolver</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			
+			<dependency>
+				<groupId>org.meveo</groupId>
+				<artifactId>meveo-json-schema</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>commons-io</groupId>
+				<artifactId>commons-io</artifactId>
+				<version>2.11.0</version>
+			</dependency>
+
+			<dependency>
+				<groupId>javax.jws</groupId>
+				<artifactId>javax.jws-api</artifactId>
+				<version>1.1</version>
+			</dependency>
+
 			<dependency>
 				<groupId>org.unix4j</groupId>
 				<artifactId>unix4j-command</artifactId>
@@ -152,7 +174,7 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
-			
+
 			<dependency>
 				<groupId>org.apache.commons</groupId>
 				<artifactId>commons-lang3</artifactId>
@@ -461,7 +483,7 @@
 		</pluginManagement>
 	</build>
 	-->
-	
+
 	<build>
 		<pluginManagement>
 			<plugins>
