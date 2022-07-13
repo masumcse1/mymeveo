@@ -3,13 +3,14 @@ package org.meveo.api.ws.impl;
 import java.sql.SQLException;
 import java.util.Set;
 
+import javax.annotation.Resource;
 import javax.inject.Inject;
 import javax.jws.WebMethod;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;
-//import javax.xml.ws.WebServiceContext;
-//iport javax.xml.ws.handler.MessageContext;
+import javax.xml.ws.WebServiceContext;
+import javax.xml.ws.handler.MessageContext;
 
 import org.meveo.admin.exception.BusinessException;
 import org.meveo.api.MeveoApiErrorCodeEnum;
@@ -28,8 +29,8 @@ public abstract class BaseWs {
 
     protected Logger log = LoggerFactory.getLogger(this.getClass());
 
-   // @Resource
-  //  protected WebServiceContext webServiceContext;
+    @Resource
+    protected WebServiceContext webServiceContext;
 
     @Inject
     protected UserService userService;
@@ -99,8 +100,7 @@ public abstract class BaseWs {
     }
     
     protected HttpServletRequest getHttpServletRequest() {
-     //   MessageContext mc = webServiceContext.getMessageContext();
-      //  return (HttpServletRequest) mc.get(MessageContext.SERVLET_REQUEST);
-    	return null;
+        MessageContext mc = webServiceContext.getMessageContext();
+        return (HttpServletRequest) mc.get(MessageContext.SERVLET_REQUEST);
     }
 }
