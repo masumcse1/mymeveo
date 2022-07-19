@@ -3,7 +3,7 @@
 
     <persistence-unit name="MeveoAdmin">
         <jta-data-source>java:jboss/datasources/MeveoAdminDatasource</jta-data-source>
-        <jar-file>lib/meveo-model-1.0.1-SNAPSHOT.jar</jar-file>
+        <jar-file>lib/meveo-model-${project.version}.jar</jar-file>
         <shared-cache-mode>ENABLE_SELECTIVE</shared-cache-mode>
         <properties>
             <property name="hibernate.show_sql" value="true" />
@@ -35,7 +35,7 @@
 
     <persistence-unit name="MeveoAdminMultiTenant">
         <jta-data-source>java:jboss/datasources/MeveoAdminDatasource</jta-data-source>
-        <jar-file>/opt/jboss/meveo-model-1.0.1-SNAPSHOT.jar</jar-file>
+        <jar-file>/opt/jboss/meveo-model-${project.version}.jar</jar-file>
         <shared-cache-mode>ENABLE_SELECTIVE</shared-cache-mode>
         <properties>
             <property name="hibernate.connection.charSet" value="utf-8"/>
