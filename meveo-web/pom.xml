@@ -160,26 +160,31 @@
 		<dependency>
 			<groupId>org.meveo</groupId>
 			<artifactId>meveo-model</artifactId>
+			<version>${project.version}</version>
 			<optional>true</optional>
 		</dependency>
 		<dependency>
 			<groupId>org.meveo</groupId>
 			<artifactId>meveo-admin</artifactId>
+			<version>${project.version}</version>
 			<optional>true</optional>
 		</dependency>
 		<dependency>
 			<groupId>org.meveo</groupId>
 			<artifactId>meveo-api</artifactId>
+			<version>${project.version}</version>
 			<optional>true</optional>
 		</dependency>
 		<dependency>
 			<groupId>org.meveo</groupId>
 			<artifactId>meveo-api-dto</artifactId>
+			<version>${project.version}</version>
 			<optional>true</optional>
 		</dependency>
 		<dependency>
 			<groupId>org.meveo</groupId>
 			<artifactId>meveo-security</artifactId>
+			<version>${project.version}</version>
 			<optional>true</optional>
 		</dependency>
 
