@@ -368,7 +368,7 @@
 		</dependency>
 		<dependency>
 			<groupId>com.jcraft</groupId>
-			<artifactId>jsch</artifactId>
+			<artifactId>jsch</artifactId> 
 		</dependency>
 		<dependency>
 			<groupId>org.apache.ftpserver</groupId>
@@ -1067,16 +1067,31 @@
 				</configuration>
 			</plugin>
 			
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-ear-plugin</artifactId>
-				<version>2.10.1</version>
-				<configuration>
-					<version>7</version>
-					<defaultLibBundleDir>lib</defaultLibBundleDir>
-				</configuration>
-			</plugin>
-			
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-ear-plugin</artifactId>
+					<version>3.2.0</version>
+					<configuration>
+						<version>7</version>
+						<defaultLibBundleDir>lib</defaultLibBundleDir>
+						<modules>
+							<webModule>
+								<groupId>org.meveo</groupId>
+								<artifactId>meveo-web</artifactId>
+								<contextRoot>/meveo</contextRoot>
+							</webModule>
+
+							<ejbModule>
+								<groupId>org.meveo</groupId>
+								<artifactId>meveo-ejb</artifactId>
+							</ejbModule>
+
+						</modules>
+						<generateModuleId>true</generateModuleId>
+						<outputFileNameMapping>@{artifactId}@-@{version}@@{dashClassifier?}@.@{extension}@</outputFileNameMapping>
+					</configuration>
+				</plugin>
+						
 		</plugins>
 	</build>
 
